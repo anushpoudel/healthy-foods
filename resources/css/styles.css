@@ -1,3 +1,6 @@
+/* ------------------ */
+/* BASIC SETUP */
+/* ------------------ */
 * {
     margin: 0;
     padding: 0;
@@ -10,16 +13,24 @@ html {
     color: #555;
     font-family: 'Lato', 'Arial', sans-serif;
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 400;
     text-rendering: optimizeLegibility;
 
 }
+
+/* ------------------ */
+/* RESUABLE */
+/* ------------------ */
 
 .row {
     max-width: 1140px;
     margin: 0 auto;
 
 }
+
+/* ------------------ */
+/* HEADER */
+/* ------------------ */
 
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/hero.jpg);
@@ -34,7 +45,7 @@ h1 {
     margin-bottom: 20px;
     color: #fff;
     font-size: 240%;
-    font-weight: 300;
+    font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 1px;
     word-spacing: 4px;
@@ -45,26 +56,26 @@ h1 {
     width: 1140px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 
 }
 
 .btn:link,
-.btn:visited{
+.btn:visited {
     display: inline-block;
     padding: 10px 30px;
-    font-weight: 300;
+    font-weight: 400;
     text-decoration: none;
     border-radius: 200px;
     color: #fff;
-    transition:background-color 0.2s,border 0.2s, color 0.2s ;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
 
 
 }
 
 
 .btn-full:link,
-.btn-full:visited{
+.btn-full:visited {
     background-color: #e67e22;
     border: 1px solid #e67e22;
     margin-right: 15px;
@@ -72,22 +83,58 @@ h1 {
 }
 
 .btn-ghost:link,
-.btn-ghost:visited
-{
+.btn-ghost:visited {
     border: 1px solid #e67e22;
     color: #e67e22;
 }
+
 .btn:hover,
-.btn:active{
+.btn:active {
     background-color: #b05d14;
 
 }
+
 .btn-ghost:hover,
-.btn-ghost:active
-{
+.btn-ghost:active {
     border: 1px solid #e67e22;
     color: #fff;
 
 }
 
+/* ------------------ */
+/* TOP NAVUIGATION */
+/* ------------------ */
 
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 90%;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 1px solid #e67e22;
+}
