@@ -162,7 +162,7 @@ header {
 /* ------------------ */
 
 .section-features {
-    padding: 80px 0;
+    padding: 80px 0 120px 0;
 }
 
 h2 {
@@ -206,11 +206,12 @@ h2:after {
 /* ------------------ */
 
 .icon-big {
-    font-size: 300%;
+    font-size: 100%;
     display: block;
     color: #e67e22;
     margin-bottom: 5px;
     height: 40px;
+    width: 20%;
     float: left;
     padding: 0;
 
@@ -221,17 +222,67 @@ h2:after {
     height: 40px;
     letter-spacing: 0px;
     margin-top: 5px;
+    width: 80%;
 }
 
 .box {
     padding-top: 0.5%;
     padding-right: 0.5%;
-    border: 2px solid #e67e22;
+    border: 2px solid rgba(230,126,34,0.3);
     border-radius: 8px;
     height: 300px;
     box-shadow: 0px 15px 20px -8px rgba(0, 0, 0, 0.6);
+    transition: transform 0.4s;
+}
+
+.box:hover {
+    transform: scale(1.03);
 }
 
 /* ------------------ */
 /* FEATURES SECTION END*/
+/* ------------------ */
+
+
+/* ------------------ */
+/* IMAGE GALLERY*/
+/* ------------------ */
+.section-images {
+    padding: 0;
+}
+.section-images ul {
+    width: 100%;
+    list-style: none;
+
+}
+.section-images li {
+    width: 25%;
+    float: left;
+    display: block;
+
+}
+
+.meal-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+
+}
+.section-images img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.4s;
+
+}
+
+.section-images img:hover {
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+/* ------------------ */
+/* IMAGE GALLERY END*/
 /* ------------------ */
