@@ -1,5 +1,5 @@
 /* ------------------ */
-/* BASIC SETUP */
+/* BASIC SETUP #e67e22*/
 /* ------------------ */
 * {
     margin: 0;
@@ -16,6 +16,15 @@ html {
     font-weight: 400;
     text-rendering: optimizeLegibility;
 
+}
+
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
 }
 
 /* ------------------ */
@@ -37,14 +46,16 @@ h3 {
 
 }
 
-h1 {
-    margin-top: 0;
-    margin-bottom: 20px;
-    color: #fff;
-    font-size: 240%;
-    word-spacing: 4px;
+h2:after {
+    display: block;
+    height: 2px;
+    width: 100px;
+    background-color: #e67e22;
+    border-radius: 50px;
+    content: " ";
+    margin: 0 auto;
+    margin-top: 30px;
 }
-
 
 /* ------------------ */
 /* HEADER */
@@ -100,6 +111,14 @@ header {
 /* NAVIGATION END */
 /* ------------------ */
 
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 4px;
+}
 
 .hero-text-box {
     position: absolute;
@@ -173,17 +192,6 @@ h2 {
 
 }
 
-h2:after {
-    display: block;
-    height: 2px;
-    width: 100px;
-    background-color: #e67e22;
-    border-radius: 50px;
-    content: " ";
-    margin: 0 auto;
-    margin-top: 30px;
-}
-
 .long-copy p {
     width: 62%;
     margin: 0 auto;
@@ -202,7 +210,7 @@ h2:after {
 }
 
 /* ------------------ */
-/* ICONS */
+/* BOX IN FEATURES */
 /* ------------------ */
 
 .icon-big {
@@ -232,7 +240,7 @@ h2:after {
     border-radius: 8px;
     height: 300px;
     box-shadow: 0px 15px 20px -8px rgba(0, 0, 0, 0.6);
-    transition: transform 0.4s;
+    transition: transform 0.5s;
 }
 
 .box:hover {
@@ -285,4 +293,86 @@ h2:after {
 
 /* ------------------ */
 /* IMAGE GALLERY END*/
+/* ------------------ */
+
+/* ------------------ */
+/* HOW IT WORKS */
+/* ------------------ */
+.section-work {
+    padding: 80px 0;
+    background-color: #e0e0e0;
+}
+.steps-box {
+    margin-top: 30px;
+}
+
+.steps-box:first-child {
+    text-align: right;
+    padding-right: 3%;
+    
+}
+
+.steps-box:last-child {
+    padding-left: 3%;
+}
+
+.iphone-image {
+    width: 40%;
+}
+
+.work-steps {
+    margin-bottom: 40px;
+}
+
+.work-steps-last {
+    margin-bottom: 70px;
+}
+
+.work-steps div {
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    border-radius: 50%;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    font-size: 40px;
+    float: left;
+    margin-right: 20px;
+}
+
+.steps-box-2 {
+    margin-top: 120px;
+}
+
+.appstore,
+.playstore {
+    height: 50px;
+    width: 150px;
+    margin-right: 10px;
+}
+
+.playstore {
+    height: 48px;
+}
+
+/* ------------------ */
+/* HOW IT WORKS END */
+/* ------------------ */
+
+/* ------------------ */
+/* CITIES */
+/* ------------------ */
+
+.section-cities {
+    padding: 80px 0;
+}
+
+.box-cities img {
+    width: 100%;
+    height: auto;
+    padding-bottom: 15px;
+}
+/* ------------------ */
+/* CITIES END */
 /* ------------------ */
